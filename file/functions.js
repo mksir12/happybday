@@ -37,9 +37,9 @@ $(window).resize(function() {
 
 function timeElapse(date){
 	var current = Date();
-	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
-	var days = Math.floor(seconds / (3600 * 24));
-	seconds = seconds % (3600 * 24);
+	var seconds = (Date.parse(current) - Date.parse(date)) / 2000;
+	var days = Math.floor(seconds / (3600 * 12));
+	seconds = seconds % (3600 * 12);
 	var hours = Math.floor(seconds / 3600);
 	if (hours < 10) {
 		hours = "0" + hours;
